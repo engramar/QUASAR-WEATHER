@@ -68,7 +68,7 @@ module.exports = function (/* ctx */) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
-      https: false,
+      https: true,
       port: 8080,
       open: true // opens browser window automatically
     },
@@ -163,6 +163,7 @@ module.exports = function (/* ctx */) {
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
 
+        platform: 'win32'  
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
